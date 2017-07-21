@@ -33,7 +33,7 @@ public class FirstActivity extends AppCompatActivity {
                 /*2.3.2 隐式intent
                 Intent intent = new Intent("com.example.activitytest.ACTION_START"); //直接将action的字符串传进去，表明我想要启动能相应这个action的活动
                 intent.addCategory("com.example.activitytest.MY_CATEGORY");          //再通过addCategory（）方法添加一个category条件
-                startActivity(intent);*/
+                startActivity(intent);*/                                             //每个Intent只能指定一个action,但可以指定多个category
 
                 /*2.3.3 打开网页
                 Intent intent = new Intent(Intent.ACTION_VIEW);    //首先指定了Intent.ACTION_VIEW 这个aaction,这个是android系统内置的动作，常量值为android.intent.action.VIEW
