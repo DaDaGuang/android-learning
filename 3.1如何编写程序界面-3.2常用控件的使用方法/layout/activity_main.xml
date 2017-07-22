@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--主要用于在界面上显示一段文本信息，gravity是文本对齐方式，textsize以sp作为一个单位-->
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This is TextView"
+        android:textSize="24sp"
+        android:textColor="#00ff00"/>
+
+    <!--配置和textview差不多。
+    textAllCaps默认是true即全部大写，需要配置取消-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="Button"
+        android:textAllCaps="false"/>
+
+    <!--允许输入和编辑内容，并可以在程序中对这些内容进行处理-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text"
+        android:hint="Type something here"
+        android:maxLines="2"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view"
+        android:src="@drawable/img_1"
+        android:layout_gravity="center"/>
+
+    <!--如何让进度条在数据加载完成时消失，新的知识点：android控件的可见属性，通过
+    android:visibility进行指定，可选值有三种：visible,invisible,gone。可以
+    3.2.5(1)通过代码来设置控件的可见性，使用的是setVisibility()方法。
+      还可以给ProgressBar指定不同样式，通过style属性指定
+      3.2.5(2)还可以通过android:max属性给进度条设置一个最大值，然后在代码中动态地更改进度条的进度-->
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        style="?android:progressBarStyleHorizontal"
+        android:max="100"
+        />
+
+
+</LinearLayout>
