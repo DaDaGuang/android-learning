@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uicustomviews.MainActivity">
+
+    <!--<include layout="@layout/title"/>-->
+    <!--3.4.1 include语句将标题栏布局引入进来，最后在MainActivi中将系统自带标题栏隐藏-->
+
+    <com.example.uicustomviews.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--3.4.2 添加自定义控件和添加普通控件的方式基本是一样的，只不过需要指明控件的完整类名，不能省略-->
+
+</android.support.constraint.ConstraintLayout>

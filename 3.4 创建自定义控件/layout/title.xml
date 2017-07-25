@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@drawable/title_bg">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/back_bg"
+        android:text="Back"
+        android:textColor="#fff"
+        android:id="@+id/title_back"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:id="@+id/title_text"
+        android:textColor="#fff"
+        android:text="Title Text"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_bg"
+        android:text="Edit"
+        android:textColor="#fff"
+        android:id="@+id/title_edit"/>
+
+</LinearLayout>
+<!--3.4.1 android:background用于为布局或者控件指定一个背景可以使用颜色或图片来进行填充
+    android:layoutmargin这个属性可以指定控件在上下左右方向上偏移的距离，也可以marginLeft或Top等属性
+    来单独指定在某个方向上偏移的距离-->
